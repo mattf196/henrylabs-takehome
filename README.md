@@ -28,3 +28,9 @@ These CX/UX problems are fun to think about! There are some decisions I made tha
 
 
 
+# Setup
+
+bun install
+bun run dev:server   # terminal 1
+bun run dev:frontend # some separate terminal 2
+
