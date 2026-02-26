@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev:frontend": "bun run --cwd fe dev",
+    "dev:server": "bun --watch server/index.ts"
+  },
+  "dependencies": {
+    "@henrylabs-interview/payments": "^0.2.18",
+    "bun": "^1.3.9"
+  }
+}
