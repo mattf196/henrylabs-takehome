@@ -1,8 +1,8 @@
 import { PaymentProcessor } from "@henrylabs-interview/payments";
 
-const WEBHOOK_SECRET = "whsec_henry_takehome";
+const WEBHOOK_SECRET = Bun.env.WEBHOOK_SECRET!;
 const processor = new PaymentProcessor({
-  apiKey: "824c951e-dfac-4342-8e03",
+  apiKey: Bun.env.PAYMENTS_API_KEY!,
 });
 
 await processor.webhooks.createEndpoint({

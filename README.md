@@ -30,6 +30,15 @@ These CX/UX problems are fun to think about! There are some decisions I made tha
 
 # Setup
 
+### NOTE
+
+Like the absolute genius I am, I left API keys exposed when initializing the payment processor.
+
+So, before doing the below, initialize the following in a .env file:
+
+- PAYMENTS_API_KEY={your payments api key}
+- WEBHOOK_SECRET= {your webhook secret}
+
 - bun install
 - bun run dev:server 
 - bun run dev:frontend 
